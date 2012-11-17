@@ -77,7 +77,7 @@ public class OnlineKMeansTopology {
         
         TopologyBuilder builder = new TopologyBuilder();
         
-        builder.setSpout("spout", new TwitterSampleSpout("salahmeister@gmail.com","bettrave"), 5);
+        builder.setSpout("spout", new RandomSentenceSpout(), 5);
         
         builder.setBolt("tfidf", new TFIDF(), 8)
                  .shuffleGrouping("spout");

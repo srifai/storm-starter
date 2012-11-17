@@ -1,4 +1,4 @@
-/*
+
 
 package storm.starter.spout;
 
@@ -102,4 +102,3 @@ public class TwitterSampleSpout extends BaseRichSpout {
     }
     
 }
-*/
